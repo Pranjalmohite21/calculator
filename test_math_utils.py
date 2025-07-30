@@ -1,5 +1,5 @@
-import math_utils
-from calculator import add, subtract, divide
+import pytest
+from test_math_utils import add, subtract, divide
 
 def test_add():
     assert add(2, 3) == 5
@@ -16,3 +16,4 @@ def test_divide_normal():
 def test_divide_by_zero():
     with pytest.raises(ZeroDivisionError):
         divide(5, 0)
+
