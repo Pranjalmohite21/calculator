@@ -13,5 +13,8 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Install dependencies
+        run: pip install -r
+
       - name: Run unit tests
         run: python -m unittest discover
